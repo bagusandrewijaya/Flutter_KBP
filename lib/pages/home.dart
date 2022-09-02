@@ -96,10 +96,10 @@ class _HomeState extends State<Home> {
                   width: 20,
                 ),
                 Text(
-                  "Hubungi Call Center Kami\n Di 0xxxxx",
+                  "layanan Gawat Darurat 24 Jam.\n Di (0251)-862-6666",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 15,
                       color: Colors.white),
                 )
               ],

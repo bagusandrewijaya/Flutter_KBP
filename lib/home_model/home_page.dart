@@ -1,4 +1,4 @@
-import 'package:demoapps/pages/dashboard.dart';
+import 'package:demoapps/pages/listdoctor.dart';
 import 'package:demoapps/pages/setting.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -35,18 +35,18 @@ class _HomePageState extends State<HomePage> {
     getname = mailpref.getString("gmailinfo");
   }
 
-  final List<Widget> _pages = [Home(), DashBoard(), SettingPages()];
+  final List<Widget> _pages = [Home(), ListDoctor(), SettingPages()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: _pages[_SelectedIndex],
         bottomNavigationBar: Container(
-          color: Colors.black,
+          color: Color(0xff82DBD8),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20),
             child: GNav(
-                backgroundColor: Colors.black,
+                backgroundColor: Color(0xff82DBD8),
                 color: Colors.white,
                 activeColor: Colors.white,
                 tabBackgroundColor: Colors.grey.shade800,
